@@ -1,5 +1,11 @@
 package agency;
 
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+
+import static org.assertj.core.api.Assertions.*;
+
+
 class TestRentalAgency extends agency.TestCar {
 
   // TODO : décommenter le code ci-dessous pour tester la tâche 2.

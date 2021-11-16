@@ -1,5 +1,10 @@
 package agency;
 
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+
+import static org.assertj.core.api.Assertions.assertThat;
+
 class TestClient {
   // TODO : décommenter le code ci-dessous pour tester la classe Client.
   /*
