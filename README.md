@@ -8,5 +8,4 @@ critères.
 
 ## Membres du projet
 
-- NOM prénom du premier participant
-- NOM prénom du deuxième participant
+- NOM prénom
