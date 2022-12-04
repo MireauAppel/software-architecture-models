@@ -76,7 +76,7 @@ class TestRentalAgency extends agency.TestCar {
     rentalAgency.add(windows95Car);
     rentalAgency.rentVehicle(arnaud, catalinaCar);
     rentalAgency.rentVehicle(paul, windows95Car);
-    assertThat(rentalAgency.allRentedVehicles()).containsExactly(catalinaCar, windows95Car);
+    assertThat(rentalAgency.allRentedVehicles()).contains(catalinaCar, windows95Car);
   }
 
   @Test
