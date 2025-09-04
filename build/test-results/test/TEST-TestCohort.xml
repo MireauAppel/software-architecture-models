@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="TestCohort" tests="4" skipped="0" failures="4" errors="0" timestamp="2025-09-04T09:10:26" hostname="V-PP-47-L-009" time="0.125">
+<testsuite name="TestCohort" tests="4" skipped="0" failures="4" errors="0" timestamp="2025-09-04T09:26:56" hostname="V-PP-47-L-009" time="0.111">
   <properties/>
-  <testcase name="testGetStudentsIsEmpty_whenEmptyCohort()" classname="TestCohort" time="0.07">
+  <testcase name="testGetStudentsIsEmpty_whenEmptyCohort()" classname="TestCohort" time="0.056">
     <failure message="java.lang.AssertionError: &#10;Expecting actual not to be null" type="java.lang.AssertionError">java.lang.AssertionError: 
 Expecting actual not to be null
 	at TestCohort.testGetStudentsIsEmpty_whenEmptyCohort(TestCohort.java:25)
@@ -187,7 +187,7 @@ expected:
 	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
 </failure>
   </testcase>
-  <testcase name="testPrintStudentsResults_whenCohortContainsStudents()" classname="TestCohort" time="0.028">
+  <testcase name="testPrintStudentsResults_whenCohortContainsStudents()" classname="TestCohort" time="0.031">
     <failure message="org.opentest4j.AssertionFailedError: &#10;expected: &#10;  &quot;L2 informatique&#10;  &#10;  David Goodenough&#10;  Programmation 2 : 10.0/20&#10;  Structures discrètes : 10.0/20&#10;  Note moyenne : 10.0/20&#10;  &#10;  Jean-Michel Bruitage&#10;  Programmation 2 : 0.0/20&#10;  Structures discrètes : 20.0/20&#10;  Note moyenne : 10.0/20&#10;  &#10;  &quot;&#10; but was: &#10;  &quot;&quot;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: 
 expected: 
   &quot;L2 informatique
@@ -294,7 +294,7 @@ expected:
 	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
 </failure>
   </testcase>
-  <testcase name="testGetStudents_whenCohortContainsStudents()" classname="TestCohort" time="0.009">
+  <testcase name="testGetStudents_whenCohortContainsStudents()" classname="TestCohort" time="0.003">
     <failure message="org.opentest4j.AssertionFailedError: &#10;expected: [null, null]&#10; but was: null" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: 
 expected: [null, null]
  but was: null

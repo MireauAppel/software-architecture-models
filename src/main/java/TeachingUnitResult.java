@@ -35,8 +35,7 @@ public class TeachingUnitResult {
    */
   @Override
   public String toString() {
-    // TODO : change code
-    return null;
+    return teachingUnitName + " : " + grade;
   }
 
 

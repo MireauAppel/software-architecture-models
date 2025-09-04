@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="TestGrade" tests="5" skipped="0" failures="0" errors="0" timestamp="2025-09-04T09:10:27" hostname="V-PP-47-L-009" time="0.013">
+<testsuite name="TestGrade" tests="5" skipped="0" failures="0" errors="0" timestamp="2025-09-04T09:26:57" hostname="V-PP-47-L-009" time="0.009">
   <properties/>
-  <testcase name="testAverageGrade()" classname="TestGrade" time="0.003"/>
+  <testcase name="testAverageGrade()" classname="TestGrade" time="0.002"/>
   <testcase name="testGetValue()" classname="TestGrade" time="0.003"/>
-  <testcase name="testToString()" classname="TestGrade" time="0.003"/>
-  <testcase name="testHashCode()" classname="TestGrade" time="0.002"/>
-  <testcase name="testEquals()" classname="TestGrade" time="0.001"/>
+  <testcase name="testToString()" classname="TestGrade" time="0.001"/>
+  <testcase name="testHashCode()" classname="TestGrade" time="0.0"/>
+  <testcase name="testEquals()" classname="TestGrade" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
