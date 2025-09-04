@@ -26,8 +26,7 @@ public class TeachingUnitResult {
    * @return the grade associated to the result
    */
   public Grade getGrade() {
-    // TODO : change code
-    return null;
+    return grade;
   }
 
   /**
