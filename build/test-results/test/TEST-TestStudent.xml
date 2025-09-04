@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="TestStudent" tests="6" skipped="0" failures="0" errors="0" timestamp="2025-09-04T09:55:11" hostname="V-PP-47-L-009" time="0.022">
+<testsuite name="TestStudent" tests="6" skipped="0" failures="0" errors="0" timestamp="2025-09-04T09:59:01" hostname="V-PP-47-L-009" time="0.019">
   <properties/>
-  <testcase name="testPrintResults()" classname="TestStudent" time="0.012"/>
-  <testcase name="testGetAverageGrade()" classname="TestStudent" time="0.001"/>
+  <testcase name="testPrintResults()" classname="TestStudent" time="0.011"/>
+  <testcase name="testGetAverageGrade()" classname="TestStudent" time="0.0"/>
   <testcase name="testToString()" classname="TestStudent" time="0.001"/>
-  <testcase name="testHashCode()" classname="TestStudent" time="0.002"/>
-  <testcase name="testGetGrades()" classname="TestStudent" time="0.0"/>
-  <testcase name="testEquals()" classname="TestStudent" time="0.002"/>
+  <testcase name="testHashCode()" classname="TestStudent" time="0.001"/>
+  <testcase name="testGetGrades()" classname="TestStudent" time="0.001"/>
+  <testcase name="testEquals()" classname="TestStudent" time="0.001"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

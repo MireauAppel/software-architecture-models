@@ -24,7 +24,7 @@ public class Cohort {
    * @param student the student to be added to the cohort
    */
   public void addStudent(Student student){
-    // TODO : add code
+    students.add(student);
   }
 
   /**
