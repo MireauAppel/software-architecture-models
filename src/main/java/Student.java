@@ -39,8 +39,7 @@ public class Student {
    */
   @Override
   public String toString() {
-    // TODO : change code
-    return null;
+    return firstName + " " + lastName;
   }
 
 
