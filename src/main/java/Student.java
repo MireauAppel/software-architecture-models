@@ -62,8 +62,7 @@ public class Student {
    * @return the average grade of the student
    */
   public Grade averageGrade() {
-
-    return null;
+    return Grade.averageGrade(getGrades());
   }
 
   /**
