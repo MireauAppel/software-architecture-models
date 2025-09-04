@@ -6,4 +6,4 @@ Le but de ce TP est de créer des classes permettant de représenter des étudia
 
 ## Membres du projet
 
-- NOM, prénom, numéro de groupe
+- APPEL, Mireau, Groupe 2
