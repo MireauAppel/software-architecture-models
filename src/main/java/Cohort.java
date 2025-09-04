@@ -32,8 +32,7 @@ public class Cohort {
    * @return the list of students of the cohort.
    */
   public List<Student> getStudents(){
-    // TODO : change code
-    return null;
+    return students;
   }
 
   /**
@@ -41,7 +40,12 @@ public class Cohort {
    * grade.
    */
   public void printStudentsResults(){
-    // TODO : add code
+    System.out.println(name);
+    System.out.println();
+    for (Student student : students){
+      student.printResults();
+      System.out.println();
+    }
   }
 
   /**
@@ -50,7 +54,6 @@ public class Cohort {
    */
   @Override
   public String toString() {
-    // TODO : change code
-    return null;
+    return name;
   }
 }
