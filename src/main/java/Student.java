@@ -50,7 +50,6 @@ public class Student {
    */
   public List<Grade> getGrades(){
     List<Grade> grades = new ArrayList<>();
-    int count = 0;
     for (int i=0; i<results.size(); i++) {
       grades.add(results.get(i).getGrade());
     }
@@ -63,7 +62,7 @@ public class Student {
    * @return the average grade of the student
    */
   public Grade averageGrade() {
-    // TODO : change code
+
     return null;
   }
 
