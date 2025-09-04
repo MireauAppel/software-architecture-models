@@ -30,7 +30,7 @@ public class Student {
    * @param grade the grade of the added result
    */
   public void addResult(String teachingUnitName, Grade grade){
-    // TODO : add code
+    results.add(new TeachingUnitResult(teachingUnitName, grade));
   }
 
   /**
