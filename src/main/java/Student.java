@@ -70,7 +70,12 @@ public class Student {
    * the average grade of the student.
    */
   public void printResults(){
-    // TODO : add code
+    System.out.println(firstName + " " + lastName);
+    for (TeachingUnitResult result : results) {
+      System.out.println(result);
+    }
+    System.out.print("Note moyenne : ");
+    System.out.println(averageGrade());
   }
 
 
