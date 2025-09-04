@@ -50,8 +50,12 @@ public class Student {
    * @return the grades of the student
    */
   public List<Grade> getGrades(){
-
-    return null;
+    List<Grade> grades = new ArrayList<>();
+    int count = 0;
+    for (int i=0; i<results.size(); i++) {
+      grades.add(results.get(i).getGrade());
+    }
+    return grades;
   }
 
   /**
