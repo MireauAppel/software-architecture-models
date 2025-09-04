@@ -37,8 +37,7 @@ public class Grade {
    */
   @Override
   public String toString() {
-    // TODO : change code
-    return null;
+    return value + "/" + MAXIMUM_GRADE;
   }
 
   /**
