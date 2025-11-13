@@ -39,6 +39,6 @@ public class RentalAgency {
         return vehicles.stream().filter(criterion).toList();
     }
     public void printSelectedVehicles(Predicate<Vehicle> criterion) {
-        vehicles.stream().filter(criterion).forEach(System.out::println);
+        select(criterion).forEach(System.out::println);
     }
 }
