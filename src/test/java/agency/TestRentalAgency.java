@@ -54,7 +54,7 @@ class TestRentalAgency extends agency.TestCar {
 
 
   // TODO : décommenter le code ci-dessous pour tester la tâche 6.
-  /*
+  
   @Test
   void testSelect(){
     rentalAgency.add(catalinaCar);
@@ -65,7 +65,7 @@ class TestRentalAgency extends agency.TestCar {
             .containsExactly(windows95Car);
   }
 
-
+/*
 
   private Client arnaud = new Client("Arnaud", "Labourel", 1981);
   private Client paul = new Client("Paul", "Calcul", 2018);
