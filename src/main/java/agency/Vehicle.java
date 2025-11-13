@@ -5,6 +5,8 @@ public interface Vehicle {
     String getModel();
     int getProductionYear();
     double dailyRentalPrice();
+
     boolean equals(Object o);
-    String toString();
-}
+    String toString();//        return getBrand() + " " + getModel() + " " + getProductionYear() + ;
+    }
+
