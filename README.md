@@ -8,4 +8,4 @@ critères.
 
 ## Membres du projet
 
-- NOM prénom
+- APPEL Mireau
