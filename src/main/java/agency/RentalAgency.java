@@ -27,7 +27,7 @@ public class RentalAgency {
         if (contains(vehicle)) {
             vehicles.remove(vehicle);
         }else  {
-            throw new UnknownVehicleException(vehicle + "not at Rental Agency");
+            throw new UnknownVehicleException(vehicle);
         }
     }
     public List<Vehicle> getVehicles() {

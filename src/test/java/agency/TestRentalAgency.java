@@ -9,7 +9,7 @@ import static org.assertj.core.api.Assertions.*;
 class TestRentalAgency extends agency.TestCar {
 
   // TODO : décommenter le code ci-dessous pour tester la tâche 2.
-  /*
+
   private RentalAgency rentalAgency;
 
   @BeforeEach
@@ -40,18 +40,18 @@ class TestRentalAgency extends agency.TestCar {
     assertThat(rentalAgency.getVehicles()).doesNotContain(catalinaCar);
   }
 
-   */
+
 
   // TODO : décommenter le code ci-dessous pour tester la méthode select.
 
-  /*
+
   @Test
   void testRemovingNonExistingVehicle(){
     assertThatThrownBy(() -> rentalAgency.remove(catalinaCar))
             .isInstanceOf(UnknownVehicleException.class)
             .hasMessageContaining(catalinaCar.toString());
   }
-  */
+
 
   // TODO : décommenter le code ci-dessous pour tester la tâche 6.
   /*
