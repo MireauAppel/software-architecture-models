@@ -2,6 +2,7 @@ package agency;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.function.Predicate;
 
 public class RentalAgency {
     private List<Vehicle> vehicles;
@@ -32,5 +33,12 @@ public class RentalAgency {
     }
     public List<Vehicle> getVehicles() {
         return vehicles;
+    }
+
+    public List<Vehicle> select(Predicate<Vehicle> criterion) {
+        return vehicles.stream().filter(criterion).toList();
+    }
+    public void printSelectedVehicles(Predicate<Vehicle> criterion) {
+        vehicles.stream().filter(criterion).forEach(System.out::println);
     }
 }
