@@ -17,7 +17,12 @@ public class AbstractMotorbike extends AbstractVehicle {
         return PRICE_PER_UNIT_OF_CYLINDER_CAPACITY*cylinderCapacity;
     }
 
-    public String toString(){
-        return TYPE + ' ' + brand + ' ' + model + ' ' + productionYear + " (" + cylinderCapacity + " cm³) " + ": " + dailyRentalPrice() + '€';
+    public String type() {
+        return TYPE;
+    }
+
+    @Override
+    public String vehicleDetails() {
+        return cylinderCapacity + "cm³";
     }
 }

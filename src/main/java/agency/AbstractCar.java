@@ -20,11 +20,12 @@ public class AbstractCar extends AbstractVehicle {
         return PRICE_PER_SEAT_FOR_OLD_CAR*numberOfSeats;
     }
 
-    public String toString(){
-        if (numberOfSeats==1) {
-            return TYPE + ' ' + brand + ' ' + model + ' ' + productionYear + " (" + numberOfSeats + " seat) " + ": " + dailyRentalPrice() + '€';
-        }
-        return TYPE + ' ' + brand + ' ' + model + ' ' + productionYear + " (" + numberOfSeats + " seats) " + ": " + dailyRentalPrice() + '€';
+    public String type(){
+        return TYPE;
+    }
+    public String vehicleDetails(){
+        if (numberOfSeats==1){return numberOfSeats+" seat";}
+        return numberOfSeats+" seats";
     }
 
 }

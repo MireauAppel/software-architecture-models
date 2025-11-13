@@ -34,9 +34,16 @@ public abstract class AbstractVehicle implements Vehicle {
         return this.productionYear;
     }
 
+
+    public abstract String vehicleDetails();
+
+    public abstract String type();
     @Override
     public abstract double dailyRentalPrice();
 
-    public abstract String toString();
+
+    public String toString(){
+        return type() + ' ' + brand + ' ' + model + ' ' + productionYear + " (" + vehicleDetails() + ") " + ": " + dailyRentalPrice() + '€';
+    }
 }
 
