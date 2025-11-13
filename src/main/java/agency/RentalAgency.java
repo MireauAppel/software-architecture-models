@@ -13,6 +13,23 @@ public class RentalAgency {
         this.vehicles = vehicles;
     }
 
+    public boolean contains(Vehicle vehicle) {
+        return vehicles.contains(vehicle);
+    }
+    public boolean add(Vehicle vehicle) {
+        if (contains(vehicle)) {
+            return false;
+        }
+        vehicles.add(vehicle);
+        return true;
+    }
+    public void remove(Vehicle vehicle) {
+        if (contains(vehicle)) {
+            vehicles.remove(vehicle);
+        }else  {
+            throw new UnknownVehicleException(vehicle + "not at Rental Agency");
+        }
+    }
     public List<Vehicle> getVehicles() {
         return vehicles;
     }
