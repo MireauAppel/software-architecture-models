@@ -15,8 +15,8 @@ class TestCar {
   // TODO : décommenter le code ci-dessous pour tester la tâche 2.
 
 
-  Car catalinaCar = new Car(apple, catalina, catalinaYear, catalinaNumberOfSeats);
-  Car windows95Car = new Car(microsoft, windows95, windows95Year, windows95NumberOfSeats);
+  AbstractCar catalinaCar = new AbstractCar(apple, catalina, catalinaYear, catalinaNumberOfSeats);
+  AbstractCar windows95Car = new AbstractCar(microsoft, windows95, windows95Year, windows95NumberOfSeats);
   static final String apple = "Apple";
   static final String catalina = "Catalina";
   static final String microsoft = "Microsoft";
@@ -36,21 +36,21 @@ class TestCar {
   @Test
   void testConstructionOfTooOldVehicle(){
     assertThatIllegalArgumentException()
-            .isThrownBy(()->new Car("Linux", "ubuntu",1899, 3))
+            .isThrownBy(()->new AbstractCar("Linux", "ubuntu",1899, 3))
             .withMessageContaining("1899");
   }
 
   @Test
   void testConstructionOfFutureVehicle() {
     assertThatIllegalArgumentException()
-            .isThrownBy(() -> new Car("Linux", "ubuntu", 2020, 3))
+            .isThrownBy(() -> new AbstractCar("Linux", "ubuntu", 2020, 3))
             .withMessageContaining("2020");
   }
 
   @Test
   void testConstructionOfVehicleWithNoSeats() {
     assertThatIllegalArgumentException()
-            .isThrownBy(() -> new Car("Linux", "ubuntu", 2000, 0))
+            .isThrownBy(() -> new AbstractCar("Linux", "ubuntu", 2000, 0))
             .withMessageContaining("0");
   }
 
@@ -65,21 +65,21 @@ class TestCar {
   @Test
   void testConstructionOfFutureCar(){
     assertThatIllegalArgumentException().
-            isThrownBy(() -> new Car("Linux", "ubuntu",
+            isThrownBy(() -> new AbstractCar("Linux", "ubuntu",
             2020, 2));
   }
 
   @Test
   void testConstructionOfTooOldCar(){
     assertThatIllegalArgumentException().
-            isThrownBy(() -> new Car("Linux", "ubuntu",
+            isThrownBy(() -> new AbstractCar("Linux", "ubuntu",
             1899, 1));
   }
 
   @Test
   void testThatCarImplementsVehicle(){
     assertThat(catalinaCar).withFailMessage("%s must implement %s",
-            Car.class, Vehicle.class)
+            AbstractCar.class, Vehicle.class)
             .isInstanceOf(Vehicle.class);
   }
 
@@ -88,14 +88,14 @@ class TestCar {
   void testIsNew(){
     assertThat(windows95Car).withFailMessage("A car with production year %s should have been old",
             windows95Year)
-            .returns(false, Car::isNew);
+            .returns(false, AbstractCar::isNew);
     assertThat(catalinaCar).withFailMessage("A car with production year %s should have been new",
             catalinaYear)
-            .returns(true, Car::isNew);
+            .returns(true, AbstractCar::isNew);
     TimeProvider.useFixedClockAt(YEAR2000);
     assertThat(windows95Car).withFailMessage("A car with production year %s should have been new in %s",
             windows95Year, YEAR2000)
-            .returns(true, Car::isNew);
+            .returns(true, AbstractCar::isNew);
     TimeProvider.useFixedClockAt(YEAR2019);
   }
 
@@ -106,11 +106,11 @@ class TestCar {
     assertThat(catalinaCar).as("Car DailyRentalPrice")
             .withFailMessage("A new car with %s seats must have price %s",
                     catalinaNumberOfSeats, expectedPriceCatalinaCar )
-            .returns(expectedPriceCatalinaCar, Car::dailyRentalPrice);
+            .returns(expectedPriceCatalinaCar, AbstractCar::dailyRentalPrice);
     assertThat(windows95Car).as("Car DailyRentalPrice")
             .withFailMessage("An old car with %s seat must have price %s",
             windows95NumberOfSeats, expectedPriceCatalinaCar )
-            .returns(expectedPriceWindowsCar, Car::dailyRentalPrice);
+            .returns(expectedPriceWindowsCar, AbstractCar::dailyRentalPrice);
   }
 
   @Test
