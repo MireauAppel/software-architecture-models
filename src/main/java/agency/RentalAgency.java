@@ -1,19 +1,28 @@
 package agency;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.function.Predicate;
 
+
 public class RentalAgency {
-    private List<Vehicle> vehicles;
+    private final List<Vehicle> vehicles;
+    private final Map<Client, Vehicle> rentedVehicles;
 
     public RentalAgency() {
-        vehicles = new ArrayList<>();
+        this.vehicles = new ArrayList<>();
+        this.rentedVehicles = new HashMap<>();
     }
     public RentalAgency(List<Vehicle> vehicles) {
         this.vehicles = vehicles;
+        this.rentedVehicles = new HashMap<>();
     }
 
+    public boolean vehicleIsRented(Vehicle v) {
+        return rentedVehicles.containsValue(v);
+    }
     public boolean contains(Vehicle vehicle) {
         return vehicles.contains(vehicle);
     }
@@ -36,7 +45,7 @@ public class RentalAgency {
     }
 
     public List<Vehicle> select(Predicate<Vehicle> criterion) {
-        return vehicles.stream().filter(criterion).toList();
+        return vehicles.stream().filter(vehicle -> criterion.test(vehicle)).toList();
     }
     public void printSelectedVehicles(Predicate<Vehicle> criterion) {
         select(criterion).forEach(System.out::println);
