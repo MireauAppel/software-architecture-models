@@ -1,7 +1,7 @@
 package Bibliothèque;
 
-public record eBook(String title, Author author, int fileSize) {
+public record eBook(String title, Author author, int fileSize) implements DigitalMedia{
     public String getDescription(){
-        return "eBook : " + title + " , " + author + " , " + fileSize;
+        return "eBook : " + title + " , " + author.getDescription() + " , " + fileSize;
     }
 }

@@ -1,4 +1,5 @@
 package Bibliothèque;
 
-public record DigitalMedia() {
+public sealed interface DigitalMedia permits AudioBook, DigitalMagazine, eBook {
+    String getDescription();
 }
