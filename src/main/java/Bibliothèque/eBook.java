@@ -4,4 +4,7 @@ public record eBook(String title, Author author, int fileSize) implements Digita
     public String getDescription(){
         return "eBook : " + title + " , " + author.getDescription() + " , " + fileSize;
     }
+    public String getType(){
+        return "eBook";
+    }
 }
