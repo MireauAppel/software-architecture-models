@@ -15,6 +15,6 @@ public class Loan {
     }
 
     public String toString() {
-        return medium.getType() + " " + loanDate + " - " + returnDate;
+        return user.getDescription() + ", " + medium.getType() + ", " + loanDate + " - " + returnDate;
     }
 }
